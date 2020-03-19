@@ -1,0 +1,14 @@
+uuid: 63c267a8-5ea1-443a-8d57-b6b7b5f81def
+name: pantheon-composer-project
+mail: mpflamingmarshmallow@gmail.com
+slogan: ''
+page:
+  403: ''
+  404: ''
+  front: /node
+admin_compact_mode: false
+weight_select_max: 100
+langcode: en
+default_langcode: en
+_core:
+  default_config_hash: yTxtFqBHnEWxQswuWvkjE8mKw2t8oKuCL1q8KnfHuGE
