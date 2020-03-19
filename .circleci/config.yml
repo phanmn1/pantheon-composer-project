@@ -77,9 +77,9 @@ jobs:
           name: setup-environment-vars
           command: /build-tools-ci/scripts/set-environment
 
-      - run:
-          name: run static tests
-          command: ./.ci/test/static/run
+      # - run:
+      #     name: run static tests
+      #     command: ./.ci/test/static/run
 
       - save_cache:
           key: composer-cache-{{ checksum "composer.lock" }}
