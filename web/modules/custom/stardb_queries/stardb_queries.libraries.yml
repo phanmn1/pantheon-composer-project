@@ -1,0 +1,18 @@
+AdultPassgeCSS:
+  version: VERSION
+  css:
+    theme:
+      css/passageCounts.css: {}
+      https://code.jquery.com/ui/1.12.0/themes/base/jquery-ui.css: { type: external, minified: false }
+  js: 
+    js/script.js: {}
+    js/scroll.js: {}
+  dependencies: 
+    -  core/modernizr
+    -  core/jqueryui
+
+Sticky: 
+  version: VERSION
+  css: 
+    theme: 
+      css/sticky.css: {}

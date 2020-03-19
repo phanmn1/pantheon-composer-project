@@ -1,0 +1,98 @@
+quality_assurance.adult_counts_qc: 
+  path: '/dashboard/QA/Adult_Counts'
+  defaults:
+    _form: '\Drupal\quality_assurance\Form\AdultCounts'
+    _title: 'Adult Count - Video QC Form'
+  requirements:
+    _permission: 'access quality assurance'
+
+quality_assurance.trap_samples_qc:
+  path: '/dashboard/QA/Trap_Samples'
+  defaults:     
+    _title: 'Trap Samples QC Entry Form'
+    #_form: '\Drupal\quality_assurance\Form\TrapSamples'
+    _controller: '\Drupal\quality_assurance\Controller\LogReportsController::content'
+    
+  requirements: 
+    _permission: 'access quality assurance'
+  
+quality_assurance.adult_counts_qc_add:
+  path: '/dashboard/QA/Adult_Counts/Adult_Counts_Add'
+  defaults: 
+    _form: '\Drupal\quality_assurance\Form\AdultCountsModalAdd'
+    _title: 'Add Adults Form'
+  requirements: 
+    _permission: 'access quality assurance'
+
+quality_assurance.trap_samples_edit: 
+  path: '/dashboard/QA/Trap_Samples/Trap_Samples_Edit'
+  defaults: 
+    _form: '\Drupal\quality_assurance\Form\TrapSamplesModalEdit'
+    _title: 'Add Trap Samples QC Modal'
+  requirements: 
+    _permission: 'access quality assurance'
+
+quality_assurance.trap_samples_advanced:
+  path: '/dashboard/QA/Trap_Samples/TrapSamplesAdvanced'
+  defaults: 
+    _form: '\Drupal\quality_assurance\Form\TrapSamplesAdvancedQuery'
+    _title: 'Advanced Query'
+  requirements: 
+    _permission: 'access quality assurance'
+
+quality_assurance.log_reports: 
+  path: '/dashboard/QA/LogReports'
+  defaults:
+    _form: '\Drupal\quality_assurance\Form\LogReports'
+    _title: 'QC Log Report'
+  requirements: 
+    _permission: 'access quality assurance'
+
+quality_assurance.klickitat: 
+  path: '/dashboard/field_data/AdultTrap'
+  defaults: 
+    _form: '\Drupal\quality_assurance\Form\KlickitatForm'
+    _title: 'Klickitat Trap'
+  requirements: 
+    _permission: 'access quality assurance'
+
+quality_assurance.rest: 
+  path: '/dashboard/field_data/REST'
+  defaults: 
+    _form: '\Drupal\quality_assurance\Form\TestRestOutput'
+    _title: 'Test Rest API'
+  requirements: 
+    _permission: 'access quality assurance'
+
+
+quality_assurance.json_return: 
+  path: '/dashboard/quality_assurance/json/{data}'
+  defaults: 
+    _title: 'Json Output'
+    _controller: '\Drupal\quality_assurance\Controller\LogReportsController::testdata'
+  requirements: 
+    _permission: 'access content'
+
+quality_assurance.lamprey: 
+  path: '/dashboard/field_data/lamprey'
+  defaults: 
+    _form: '\Drupal\quality_assurance\Form\LampreyForm'
+    _title: 'Lamprey Data Entry Form'
+  requirements: 
+    _permission: 'access star queries'
+
+quality_assurance.lampreyQA: 
+  path: '/dashboard/QA/LampreyQA'
+  defaults: 
+    _form: '\Drupal\quality_assurance\Form\LampreyFormQA'
+    _title: 'Lamprey Data QA Form'
+  requirements: 
+    _permission: 'access star queries'
+
+quality_assurance.agedData: 
+  path: '/dashboard/QA/AgeData'
+  defaults: 
+    _form: '\Drupal\quality_assurance\Form\AgedData'
+    _title: 'Aged Data Entry'
+  requirements: 
+    _permission: 'access quality assurance'

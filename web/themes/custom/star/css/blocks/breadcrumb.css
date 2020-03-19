@@ -1,0 +1,54 @@
+#system-breadcrumb-star{
+    padding-left: 85px; 
+    height: 70px; 
+    display: table-cell; 
+    vertical-align: middle;
+    z-index: 501; 
+    
+}
+
+#system-breadcrumb-star ul li {
+    
+    float: left;
+    color: #fff;
+    /* font-weight: 500; */
+    font-family: century gothic;
+    font-size: 1.8rem;
+    font-weight: 600;
+}
+
+.breadcrumb-divider {
+    font-weight: 500;
+}
+
+#system-breadcrumb-star ul li a:hover {
+    text-decoration: underline;
+}
+
+#system-breadcrumb-star ul {
+    list-style: none; 
+}
+
+#system-breadcrumb-star ul li a {
+    text-decoration: none; 
+    color: #fff;
+    font-weight: 500;
+}
+
+.breadcrumb {
+    padding: 0px !important; 
+    background: rgba(74, 74, 74, 0.85) !important; 
+    width: 100% !important ; 
+    border-radius: 0 !important; 
+    position: fixed ;
+    left: 0px; 
+    z-index: 1;
+
+}
+
+.yakima-logo {
+    position: fixed;
+    top: 4px;
+    right: 26px;
+}
+

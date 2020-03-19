@@ -1,0 +1,25 @@
+jvpittag.content:
+  path: '/dashboard/QA/JvPitTagUpdate'
+  defaults: 
+    _controller: '\Drupal\jvpittag\Controller\JvPitTagController::GetContent'
+    _title: 'Juvenile Pit Tag'
+  requirements: 
+    _permission: 'access trap samples'
+
+jvpittag.url: 
+  path: '/dashboard/QA/JvPitTagUpdate/BaseUrl'
+  defaults: 
+    _controller: '\Drupal\jvpittag\Controller\JvPitTagController::GetBaseURL'
+    _title: 'Get Base URL for web api'
+  requirements: 
+    _permission: 'access trap samples'
+
+
+jvpittag.get_username:
+  path: '/dashboard/QA/JvPitTagUpdate/GetUsername/{uid}'
+  defaults: 
+    _controller: '\Drupal\jvpittag\Controller\JvPitTagController::GetUserName'
+    _title: 'Get Username'
+  requirements:
+    _permission: 'rest api'
+

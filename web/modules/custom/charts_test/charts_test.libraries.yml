@@ -1,0 +1,5 @@
+charts_css:
+  version: VERSION
+  css:
+    theme:
+      css/charts.css: {}

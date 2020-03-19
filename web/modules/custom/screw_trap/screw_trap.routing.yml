@@ -1,0 +1,55 @@
+screw_trap.consolidated_page:
+  path: '/dashboard/QA/ScrewTrapConsolidated'
+  defaults:
+    _form: '\Drupal\screw_trap\Form\ScrewTrapConsolidatedForm'
+    _title: 'Screw Trap Consolidated Form'
+  requirements: 
+    _permission: 'access quality assurance'
+
+screw_trap.recap_summary:
+  path: '/dashboard/FishCounts/ScrewTrapRecapSummary'
+  defaults:
+    _form: '\Drupal\screw_trap\Form\RecaptureSummaryForm'
+    _title: 'Recapture Form'
+  requirements:
+    _permission: 'access quality assurance'
+
+screw_trap.jv_abundance_estimate:
+  path: '/dashboard/QA/JuvenileDensitiesEntry'
+  defaults:
+    _form: '\Drupal\screw_trap\Form\SteelheadJuvenileAbundanceEstimate'
+    _title: 'Juvenile Abundance Estimate'
+  requirements:
+    _permission: 'access quality assurance'
+
+screw_trap.jv_abundance_estimate_readonly:
+  path: '/dashboard/FishCounts/JuvenileDensity'
+  defaults: 
+    _form: '\Drupal\screw_trap\form\SteelheadJuvenileAbundanceReadOnly'
+    _title: 'Juvenile Abundance Estimate'
+  requirements:
+    _permission: 'access quality assurance'
+
+screw_trap.smolt_per_spawner:
+  path: '/dashboard/QA/SmoltPerReddSpawner'
+  defaults: 
+    _form: '\Drupal\screw_trap\form\SmoltPerReddSpawner'
+    _title: 'Smolt Per Redd Spawner'
+  requirements: 
+    _permission: 'access quality assurance'
+
+screw_trap.jv_abundance_estimate_public:
+  path: '/DataQuery/JuvenileDensity'
+  defaults:
+    _form: '\Drupal\screw_trap\form\SteelheadJuvenileAbundanceReadOnly'
+    _title: 'Juvenile Abundance Estimate'
+  requirements:
+    _permission: 'public page'
+
+screw_trap.smolt_per_spawner_readonly:
+  path: '/dashboard/FishCounts/SmoltPerReddSpawner'
+  defaults:
+    _form: '\Drupal\screw_trap\form\SmoltPerReddSpawnerReadOnly'
+    _title: 'Smolt Per Redd Spawner'
+  requirements:
+    _permission: 'access quality assurance'

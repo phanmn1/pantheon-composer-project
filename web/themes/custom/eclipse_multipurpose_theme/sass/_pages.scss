@@ -1,0 +1,592 @@
+
+/*----------------------------
+	Contact page
+-----------------------------*/
+
+.contact-message-feedback-form{
+    margin: 0 auto;
+    padding: 10px 20px;
+    border: 1px solid #e3e3e3;
+	background: #fdfdfd;
+  }
+
+.contact-message-feedback-form {
+
+	.form-text, 
+	.form-email, 
+	.form-textarea{ 
+		width: 100%;
+	}
+
+	.field--name-message textarea{
+		height: 150px;
+	}
+
+}
+
+.contact-banner{
+	position: relative;
+
+	.contact-email{
+		position: absolute;
+		top: 0;
+		background: rgba(0, 0, 0, 0.85);
+		bottom: 0;
+		left: 0;
+		right: 0;
+		text-align: center;
+		color: #fff;
+		font-size: 2em;
+
+		p{
+			margin: 0;
+			position: absolute;
+			width: 100%;
+			top: 50%;
+			height: 30px;
+			margin-top: -15px;
+		}
+	}
+}
+
+.path-contact,
+.page-node-type-career{
+
+	.sidebar{
+
+		.block{
+			padding: 10px 30px;
+			background: #0072bc;
+			color: #fff;
+
+			.fa{ margin-right: 5px; }
+
+			p{ margin: 0; }
+
+			h2{ color: #fff; }
+
+		}
+
+	}
+
+}
+
+
+/*----------------------------
+	User Login Form
+-----------------------------*/
+
+.user-form,
+.user-pass,
+.user-login-form,
+.user-register-form{
+	max-width: 400px;
+    margin: 80px auto;
+    padding: 5px 20px;
+    background: #fdfdfd;
+    @include box-shadow(0px 0px 3px #e8e8e8);
+
+	.form-text,
+	.form-email{
+		width: 100%;
+	}
+
+	p{
+		font-size: 0.70em;
+	    line-height: 150%;
+	}
+
+}
+
+.user-logged-in .user-form{
+	max-width: 500px;
+	margin: 40px auto;
+}
+
+.form-composite > .fieldset-wrapper > .description, 
+.form-item .description {
+	color: #333;
+	font-style: italic;
+}
+
+
+/*----------------------------
+	Maintainance
+-----------------------------*/
+
+.maintenance-page{
+	background: url(../images/maintenance-bg.png) center no-repeat;
+    text-align: center;
+    padding: 140px 0;
+    padding-bottom: 95px;
+    color: #000;
+    min-height: 650px;
+    background-size: cover;
+
+    header{
+    	display: none;
+    }
+
+	.brand,
+	.name-and-slogan{
+		display: inline-block;
+		vertical-align: middle;
+	}
+
+	.site-name a{
+		color: #404040;
+	}
+
+	.site-slogan,
+	.name-and-slogan{
+		display: none;
+	}
+
+	.maintenance-icon{
+		font-size: 8em;
+		color: #ffa500;
+	}
+}
+
+.maintenance-msg {
+    display: inline-block;
+    color: #004f89;
+    font-size: 1.1em;
+    max-width: 500px;
+
+ 	h1{
+		text-transform: uppercase;
+		font-weight: bold;
+		color: #004f89;
+	}
+}
+
+
+/*----------------------------
+	Profile Page
+-----------------------------*/
+
+.path-user{
+
+	.profile {
+
+		> div{
+			display: inline-block;
+			vertical-align: middle;
+			text-align: left;
+			padding: 10px;
+			margin: 0;
+		}
+
+		.label{
+			display: block;
+			color: #333;
+			text-align: left;
+			margin-bottom: 5px;
+		}
+	}
+
+	.tabs.primary{
+		text-align: center;
+
+		a{
+			padding: 6px 15px;
+    		@include border-radius(10px);
+		}
+		
+	}
+
+	.region-breadcrumb{
+		display: none;
+	}
+}
+
+
+
+/*----------------------------
+	Career Page
+-----------------------------*/
+
+.contact-message-apply-now-form{
+
+	.form-actions{
+		.form-submit:last-child{
+			display: none;
+		}
+	}
+
+}
+
+.views-field-field-work-location,
+.views-field-field-qualification,
+.views-field-field-skills,
+.views-field-view-node{
+	display: none;
+}
+
+
+/*----------------------------
+	Article
+-----------------------------*/
+
+.article-view{
+
+	.views-row{
+		margin-bottom: 15px;
+		padding-bottom: 15px;
+		border-bottom: 3px solid #eee;
+		background: #fbfbfb;
+		padding: 15px;
+	}
+	
+	.views-field-title{
+		text-transform: uppercase;
+	}
+
+	.views-field{
+		p:last-child{
+			margin: 0;
+		}
+		margin-bottom: 15px;
+	}
+
+	.views-field-field-tags{
+
+		.item-list{
+			ul{
+				margin: 0;
+    			padding: 0;
+			}
+			li{
+				display: inline-block;
+
+				a{
+					display: block;
+				    padding: 5px 8px;
+				    background: #fff;
+				    line-height: 100%;
+				    margin: 0 5px;
+					border: 1px solid #efeeee;
+				}
+			}
+		}
+
+		.field-content{
+			display: inline-block;
+		}
+	}
+
+	.views-field-nothing{
+		margin: 0;
+
+		.field-content{
+			overflow: hidden;
+			display: block;
+		}
+	}
+
+	.read-more{
+		float: right;
+	}
+
+	.blog-author{
+		float: left;
+		background: #fff;
+		display: inline-block;
+
+		img{
+			width: 35px;
+			display: block;
+		}
+
+		>div{
+			display: inline-block;
+			vertical-align: middle;
+			padding: 3px;
+		}
+	}
+}
+
+.field--name-field-tags{
+
+	.field__label,
+	.field__items{
+		display: inline-block;
+	}
+
+	.field__item{
+		display: inline-block;
+
+		a{
+			display: block;
+		    padding: 5px 8px;
+		    background: #eee;
+		    line-height: 100%;
+		    margin: 0 5px;
+		}
+	}
+}
+
+/*----------------------------
+	Locations
+-----------------------------*/
+
+.field--name-field-locations{
+	overflow: hidden;
+
+	> .field__item{
+	    padding: 10px;
+	    margin-bottom: 20px;
+	}
+
+	.field--name-field-latitude{
+		margin-bottom: 20px;
+		border: 8px solid #fff;
+		@include box-shadow(0 0 1px 1px #f1efef);
+	}
+}
+
+.view-location-home{
+	.views-field-field-locations{
+		ul{
+			margin: 0;
+			padding: 0;
+
+			li{
+				list-style: none;
+				width: 100%;
+				padding: 1px;
+			}
+
+			.field--name-field-a{				
+				background: #f3f1ed;
+				color: #666;
+				padding: 15px;
+				width: 100%;
+				margin-top: 2px;
+				font-size: .9em;
+				@include box-shadow(0 0 5px rgba(0, 0, 0, 0.3));
+			}
+		}
+
+	}
+
+	.more-link{
+		clear: both;
+		text-align: right;
+		padding: 10px 0;
+
+		a{
+			color: #fff;
+		}
+	}
+
+}
+
+
+/*---------------------------------
+	FONT AWESOME & GLYPHICONS
+----------------------------------*/
+
+.fontawesome-icon-list a {
+    padding: 20px 10px;
+    display: block;
+    border-bottom: 1px solid #eee;
+    color: #444;
+}
+
+.fontawesome-icon-list a:hover {
+    color: #fff;
+
+    .text-muted{
+    	color: #fff;
+    }
+}
+
+.bs-glyphicons-list li {
+    list-style: none;
+}
+
+.bs-glyphicons-list li:hover {
+    color: #fff;
+    background-color: #fa6f1c;
+}
+
+
+/*----------------------------
+	FAQ
+-----------------------------*/
+
+.fax-list{
+
+	.panel{
+		border: 0;
+		@include border-radius(0);
+		@include box-shadow(none);		
+	}
+
+	.panel-heading {
+	    color: #fff;
+	    @include border-radius(0);
+
+	    &:focus{ text-decoration: none;}
+	}
+
+	.panel-title{
+		font-size: 1em;
+
+		a{
+			display: block;
+			text-decoration: none;
+
+			&:hover{
+				color: #fff;
+				text-decoration: none;
+			}
+
+			&:after{
+				float: right;
+				content: '\f078';
+				font-family: FontAwesome;
+			}
+			&.collapsed{
+				&:after{
+					content: '\f054';
+				}
+			}
+		}
+	}
+}
+
+/*----------------------------
+	Gallery
+-----------------------------*/
+
+.views-field-field-galleryimage{
+	ul{
+		overflow: hidden;
+		padding: 0;
+
+		li{
+			float: left;
+			width: 33%;
+			padding: 5px;
+			list-style: none;
+
+			a{
+				position: relative;
+				display: block;
+				overflow: hidden;
+
+				img{
+					display: block;
+					@include transition(all 0.3s);
+				}
+			}
+
+			&:hover{
+				.galleryimage-description{
+					padding-bottom: 80px;
+				}
+				img{
+					@include transform(scale(1.5));
+				}
+				.gallery-zoom{
+					top: 40%;
+				}			
+			}
+		}
+	}
+}
+
+.field--name-field-galleryimage{
+
+	.field__item{
+		position: relative;
+		overflow: hidden;
+
+		a{
+			img{
+				display: block;
+				@include transition(all 0.3s);
+			}
+		}
+		&:hover{
+			.galleryimage-description{
+				padding-bottom: 20px;
+			}
+			img{
+				@include transform(scale(1.5));
+			}
+			.gallery-zoom{
+				top: 40%;
+			}			
+		}
+	}
+}
+
+.galleryimage-description{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    margin: 0;
+    background: rgba(0, 0, 0, 0.67);
+    color: #fff;
+    padding: 6px 9px;
+    text-transform: uppercase;
+	font-size: 1em;
+    @include transition(all 0.1s);
+}
+
+.gallery-zoom{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	padding: 12px;
+	font-size: 16px;
+	width: 40px;
+	height: 40px;
+	margin-left: -20px;
+	margin-top: -20px;
+	text-align: center;
+	@include transition(all 0.1s);
+}
+
+.field--name-field-galleryimage{
+	.field__item{
+		display: inline-block;
+		img{
+			display: block;
+		}
+	}
+}
+
+
+/*----------------------------
+	Looking for support
+-----------------------------*/
+
+.user-register-form{
+	.field--name-user-picture{
+		display: none;
+	}
+}
+
+.password-strength__indicator{
+	&.is-weak{
+		background: red;
+	}
+	&.is-strong{
+		background: green;
+	}
+}
+
+
+/*----------------------------
+	Looking for support
+-----------------------------*/
+
+#block-lookingforsupport{
+	background: #f9f9f9;
+    padding: 10px 10px;
+}

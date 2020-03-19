@@ -1,0 +1,5 @@
+name: 'Streamnet Upload Module'
+description: 'This module uploads excel sheet to streamnet database for the CAX/Trends dataset'
+package: Custom
+type: module
+core: 8.x

@@ -1,0 +1,15 @@
+charts_test.display:
+  path: /Dashboard/FishCounts/Graphs
+  defaults:
+    _form: '\Drupal\charts_test\Form\ChartForm'
+    _title: 'Graphs'
+  requirements:
+    _permission: 'access content'
+
+charts_test.public: 
+  path: /DataQuery/Graphs
+  defaults:
+    _form: '\Drupal\charts_test\Form\ChartForm'
+    _title: 'Graphs'
+  requirements:
+    _permission: 'access content'

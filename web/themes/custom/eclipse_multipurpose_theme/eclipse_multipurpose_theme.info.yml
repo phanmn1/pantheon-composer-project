@@ -1,0 +1,82 @@
+name: Eclipse Multipurpose Theme
+type: theme
+description: 'Designed & Developed by <a href=http://www.zymphonies.com>Zymphonies</a><br/>Contact us for any kind of Drupal services <a href=mailto:info@zymphonies.com>info@zymphonies.com</a>'
+package: core
+core: 8.x
+
+#Libraries
+libraries:
+  - eclipse_multipurpose_theme/bootstrap
+  - eclipse_multipurpose_theme/flexslider
+  - eclipse_multipurpose_theme/fontawesome
+  - eclipse_multipurpose_theme/smartmenus  
+  - eclipse_multipurpose_theme/owl
+  - eclipse_multipurpose_theme/colorbox
+  - eclipse_multipurpose_theme/animate
+  - eclipse_multipurpose_theme/scroll
+  - eclipse_multipurpose_theme/global-components
+
+#Regions
+regions:
+
+  #Header
+  header: 'Header'
+  contact_email: 'Contact email'
+  top_menu: 'Top menu'
+  primary_menu: 'Primary menu'
+  search: 'Search'
+  breadcrumb: 'Breadcrumb'
+
+  #Home page
+  homepagemessage: 'Home page message'
+  topwidget_first: 'Top first widget'
+  topwidget_second: 'Top second widget'
+  topwidget_third: 'Top third widget' 
+  topwidget_forth: 'Top forth widget' 
+
+  #Featured widgets
+  featured_image: 'Featured image'
+  featured_description: 'Featured description'
+
+  #News & events widgets
+  news: 'News widget'
+  events: 'Events widget'
+
+  #Global region
+  highlighted: 'Highlighted' 
+  page_title: 'Page title'
+  content: 'Content'
+  sidebar_first: 'Left sidebar'
+  sidebar_second: 'Right sidebar'
+
+  #Our team
+  our_team: 'Our team'
+
+  #Testimonials
+  testimonials: 'Testimonials'
+
+  #Clients
+  clients: 'Clients'
+
+  #Price table
+  price_table: 'Price table'
+
+  #Featured video
+  featured_video: 'Featured Video'
+
+  #Bottom widgets
+  bottom_first: 'Bottom first widget'
+  bottom_second: 'Bottom second widget'
+  bottom_third: 'Bottom third widget'
+  bottom_forth: 'Bottom forth widget'
+
+  #Footer widgets
+  footer_first: 'Footer first widget'
+  footer_second: 'Footer second widget'
+  footer_third: 'Footer third widget'
+
+  #Address
+  google_map: 'Google map'
+
+  #Auto hidden block
+  auto_hidden_block: 'Auto hidden blocks'

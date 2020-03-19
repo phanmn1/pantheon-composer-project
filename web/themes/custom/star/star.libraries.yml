@@ -1,0 +1,22 @@
+global:
+  version: VERSION
+  css:
+    component:
+      css/components/banner.css: {}
+      css/base.css: {}
+      css/blocks/sidebar.css: {}
+      css/blocks/breadcrumb.css: {}
+      css/fields/fields.css: {}
+  js: 
+    js/script.js: {}
+  dependencies:
+    - core/jquery
+    - core/drupal.ajax
+    - core/drupal
+    - core/jquery.once
+      
+
+
+
+    
+

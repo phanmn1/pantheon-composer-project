@@ -1,0 +1,4 @@
+access quality assurance:
+  title: 'Quality Assurance Permissions'
+  description: 'User Permissions to access query.'
+  restrict access: TRUE

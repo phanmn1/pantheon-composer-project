@@ -1,0 +1,22 @@
+name: Star Dashboard Custom Theme 
+type: theme
+base theme: eclipse_multipurpose_theme
+description: 'Custom Theme layout for custom Status and Trends Online Report'
+version: VERSION
+core: 8.x
+libraries:
+  - star/global
+#Override parent libraries
+libraries-override:
+  eclipse_multipurpose_theme/global-components:
+    css:
+      theme: 
+        css/global.css: css/base.css 
+
+regions: 
+  #Global Region
+  primary_menu: 'Primary menu'
+  breadcrumb: 'Breadcrumbs'
+  content: 'Content'
+  footer: 'Footer'
+

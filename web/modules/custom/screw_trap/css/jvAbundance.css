@@ -1,0 +1,64 @@
+#jv-abundance-table {
+    font-size: 11px;
+}
+
+.default-selects > div > div {
+	float: left; 
+	margin: 14px !important;
+}
+
+.btn-margin-wrapper {
+	margin: 14px 10px 14px 0px;
+}
+
+table th {
+    padding: 0px 14px; 
+}
+
+table td, 
+table th {
+    text-align: center;
+}
+
+.editable-column {
+    color: #b2bc47;
+}
+
+#notes-table thead {
+    display: none;
+}
+
+#notes-table tbody td {
+    background: white;
+    text-align: left;
+}
+
+.select-checkbox {
+    padding: 1px; 
+    width: 30px;
+}
+
+#notes-table_info,
+#notes-table_paginate {
+    visibility: hidden;
+}
+
+#notes-table_wrapper {
+    margin-top: 40px;
+}
+
+#notes-table {
+    border-bottom: 0px;
+}
+
+.legacy-colors{
+    background-color: #f6ff47 !important;
+}
+
+tr:nth-child(even) td {
+    background: none !important;
+}
+
+.non-legacy {
+    background-color: #f9f9f9;
+}

@@ -1,0 +1,70 @@
+# stardb_queries.content:
+#   path: '/stardb_queries/controllers'
+#   defaults:
+#     _controller: '\Drupal\stardb_queries\Controller\QueryControllers::description'
+#     _title: 'Star Queries Controllers'
+#   requirements:
+#     _permission: 'access content'
+    
+stardb_queries.page_form:
+  path: '/dashboard/FishCounts/stardb_queries'
+  defaults:
+    _form: '\Drupal\stardb_queries\Form\QueryForm'
+    _title: 'Adult Passage Counts'
+  requirements:
+    _permission: 'access star queries'    
+    
+stardb_queries.trap_samples_form: 
+  path: '/dashboard/FishCounts/trap_samples'
+  defaults:
+    _form: '\Drupal\stardb_queries\Form\TrapForm'
+    _title: 'Trap Samples'
+  requirements:
+    _permission: 'access trap samples'
+
+    
+stardb_queries.adult_passage_details: 
+  path: '/dashboard/FishCounts/passage_details'
+  defaults:
+    _form: '\Drupal\stardb_queries\Form\PassageDetails'
+    _title: 'Adult Passage Counts Details'
+  requirements:
+    _permission: 'access star queries'
+
+stardb_queries.page_form2:
+  path: '/FishData/stardb_queries'
+  defaults: 
+    _form: '\Drupal\stardb_queries\Form\QueryForm'
+    _title: 'Adult Passage Counts'
+  requirements:
+    _permission: 'access star queries'  
+
+stardb_queries.adult_passage_details2: 
+  path: '/FishData/passage_details'
+  defaults:
+    _form: '\Drupal\stardb_queries\Form\PassageDetails'
+    _title: 'Adult Passage Counts Details'
+  requirements:
+    _permission: 'access star queries'  
+
+stardb_queries.adult_passage_details3: 
+  path: '/DataQuery/passage_details'
+  defaults:
+    _form: '\Drupal\stardb_queries\Form\PassageDetails'
+    _title: 'Adult Passage Count Details'
+  requirements:
+    _permission: 'access star queries'
+
+stardb_queries.page_form3:
+  path: '/DataQuery/adult_passage_counts'
+  defaults: 
+    _form: '\Drupal\stardb_queries\Form\QueryForm'
+    _title: 'Adult Passage Counts'
+  requirements:
+    _permission: 'access star queries'  
+    
+    
+
+    
+    
+    

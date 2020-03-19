@@ -1,0 +1,62 @@
+{# {{ kint(content.field_background_image.0['#item'].entity.uri.value) }} #}
+
+{%
+  set classes = [
+    'block',
+    'block-' ~ configuration.provider|clean_class,
+    'block-' ~ plugin_id|clean_class,
+    'cover-image',
+  ]
+%}
+
+{% set background_image = file_url(content.field_background_image.0['#item'].entity.uri.value) %}
+{# {{ dump(content|keys)}} #}
+ 
+<div {{attributes.addClass(classes)}} style="background-image: url({{ background_image }})">
+    
+    <div class="block-inner">
+        <div class="header-title"> {{ content.body }} </div>
+        <div class="chairman-container">
+            <div class="message-from-chairman-container">
+                {{ content.field_message_from_chairman }}
+            </div>
+        </div>
+        <div class="report-links-container">
+            <div class="report-links-1">
+                <div class="about-this-report-container flex-bundle">
+                    {{ content.field_about_report}}
+                </div>
+                <div class="subbasin-container flex-bundle">
+                    {{ content.field_subbasin}}
+                </div>
+               
+            </div>
+             <div class="report-links-2">   
+                 <div class="fish-data-container flex-bundle">
+                    {{ content.field_fish_data}}
+                </div>
+                <div class="restoration-stories flex-bundle">
+                    {{ content.field_restoration_stories}}
+                </div>
+            </div>
+            {# <div class="report-links-3">
+                <div class="habitat-container flex-bundle">
+                    {{ content.field_habitat}}
+                </div>
+                <div class="library-container flex-bundle">
+                    {{ content.field_library}}
+                </div>
+            </div> #}
+
+                
+            </div> 
+        </div>
+        <div class="scroll-down">
+            <span class="scroll-down-span">Scroll Down</span>
+            <img src="/{{ directory }}/images/scrolldown_white.png" />
+            
+        </div>
+    </div>
+    
+    {# <h1>TEST in bundle block twig motha fuckas</h1> #}
+</div>

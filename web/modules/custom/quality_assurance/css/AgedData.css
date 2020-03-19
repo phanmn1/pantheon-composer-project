@@ -1,0 +1,24 @@
+th, td {
+    text-align: center !important; 
+}
+
+#edit-top, 
+#edit-bottom {
+    margin: 0px 0px; 
+}
+
+#editable-column {
+    color: #b2bc47; 
+}
+
+/* td.editable {
+    border: 2px solid #e8d865;
+} */
+
+.modal-table td {
+    text-align: left !important; 
+}
+
+
+
+

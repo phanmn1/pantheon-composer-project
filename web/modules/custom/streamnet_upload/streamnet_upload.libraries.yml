@@ -1,0 +1,11 @@
+datatable:
+  version: VERSION
+  css: 
+    theme:
+      css/preview.css: {}
+
+sn_link:
+  version: VERSION
+  css: 
+    theme:
+      css/snlink.css: {}

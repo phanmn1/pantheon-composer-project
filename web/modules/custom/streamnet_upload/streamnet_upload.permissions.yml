@@ -1,0 +1,4 @@
+escapement access:
+  title: 'Escapement Access'
+  description: 'User permission to upload escapement data to streamnet'
+  restrict access: TRUE

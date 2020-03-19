@@ -1,0 +1,8 @@
+react_app: 
+  version: VERSION 
+  css:
+    theme:
+      css/react-styles.css: {}
+  js: 
+    js/app.bundle.js: {}
+   

@@ -1,0 +1,5 @@
+{% for item in items %} 
+    <a class="button" href={{ item.content['#url']|render }}>
+        <span class="text chairman-text">{{ item.content['#title'] }}</span>
+    </a>
+{% endfor %}

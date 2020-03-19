@@ -1,0 +1,85 @@
+screw_trap_consolidated:
+  version: VERSION
+  css:
+    theme:
+      css/screwtrap.css: {}
+  js:
+    js/ScrewTrapConsolidated.js: {}
+
+screw_trap_recap_summary:
+  version: VERSION
+  css:
+    theme:
+      css/recap.css: {}
+  js:
+    js/RecapSummary.js: {}
+
+screw_trap_jv_estimate:
+  version: VERSION
+  css:
+    theme:
+      css/jvAbundance.css: {}
+  js:
+    js/JuvenileAbundanceEstimate.js: {}
+    
+screw_trap_jv_readOnly:
+  version: VERSION
+  css:
+    theme: 
+      css/jvAbundanceReadOnly.css: {}
+  js:
+    js/JuvenileAbundanceEstimateReadOnly.js: {}
+
+smolt_trap_per_spawner_readOnly:
+  version: VERSION
+  css: 
+    theme:
+      css/jvAbundanceReadOnly.css: {}
+  js:
+    js/SmoltPerSpawnerReadOnly.js: {}
+
+screw_trap_smolt_per_spawner: 
+  version: VERSION
+  css:
+    theme:
+      css/jvAbundance.css: {}
+  js:
+    js/SmoltPerSpawner.js: {}
+
+
+datatables_library: 
+  version: VERSION
+  css: 
+    theme:
+      https://cdn.datatables.net/v/dt/dt-1.10.16/datatables.min.css : {type: external, minified: true}
+      https://cdn.datatables.net/1.10.19/css/jquery.dataTables.min.css : {type: external, minified: true}
+      https://cdn.datatables.net/buttons/1.4.2/css/buttons.dataTables.min.css : {type: external, minified: true}
+      https://cdn.datatables.net/select/1.2.3/css/select.dataTables.min.css : {type: external, minified: true}
+      https://editor.datatables.net/extensions/Editor/css/editor.dataTables.min.css: {type: external, minified: true}
+      https://cdn.datatables.net/responsive/2.2.3/css/responsive.dataTables.min.css: {type: external, minified: true}
+      https://cdn.datatables.net/keytable/2.4.0/css/keyTable.dataTables.min.css: {type: external, minified: true}
+      https://cdn.datatables.net/fixedheader/3.1.5/css/fixedHeader.dataTables.min.css : {type: external, minified: true}
+      
+      css/DataTables.css: {} 
+      #css/LogReports.css: {}
+  js: 
+    #https://code.jquery.com/jquery-1.12.4.js : {type: external}
+    #js/table.js: {weight: -4}
+    #js/datatables.min.js: {minified: true, weight: -2}
+    
+    https://cdn.datatables.net/1.10.19/js/jquery.dataTables.min.js : {type: external, minified: true, weight: -8}
+    https://cdn.datatables.net/buttons/1.4.2/js/dataTables.buttons.min.js : {type: external, minified: true, weight: -6}
+    https://cdn.datatables.net/select/1.2.3/js/dataTables.select.min.js : {type: external, minified: true, weight: -5}
+    #https://cdn.datatables.net/buttons/1.2.1/js/buttons.print.min.js : {type: external, minified: true, weight: -4}   
+    https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.18.1/moment.min.js : {type: external, minified: true, weight: -4}
+    https://cdn.datatables.net/responsive/2.2.3/js/dataTables.responsive.min.js: {type: external, minified: true, weight: -3}
+    https://cdn.datatables.net/keytable/2.4.0/js/dataTables.keyTable.min.js: {type: external, minified: true, weight: -2}
+    js/dataTables.fixedHeader.js: {weight: -7 }
+    
+    #//cdn.datatables.net/plug-ins/1.10.16/filtering/row-based/range_dates.js
+    #https://code.jquery.com/jquery-3.3.1.js: {type: external }
+    js/dataTables.editor.min.js: {minified: true, weight: -1}
+  dependencies: 
+    -  core/drupal
+    -  core/jquery
+    -  core/drupalSettings

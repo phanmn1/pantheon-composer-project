@@ -1,0 +1,52 @@
+
+{{ attach_library('core/drupal.dialog.ajax') }}
+{{ attach_library('streamnet_upload/sn_link') }}
+{% set modal_upload = path('streamnet_upload.modal_upload_cax') %}
+{# {% set push_to_cax = path('cax.export') %} 
+{% set view_data = path('cax.preview') %} #}
+
+<h1>{{ title }}</h1>
+
+<table>
+    <thead>
+        <tr>
+            <th>Datasets</th>
+            {# <th>Status</th> #}
+            <th>Link</th>
+            <th></th>
+        <tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>Natural Adult Spawner Abundance</td>
+            {# <td></td> #}
+            <td><a href="https://cax.streamnet.org/" target = "_blank">View CAX Streamnet</a></td>
+            <td><a href={{ modal_upload }} class="btn btn-lg btn-default highlight_black stylish use-ajax">Upload to Streamnet</a></td>
+            {# <td><a href={{ view_data }} class="btn btn-lg btn-default highlight_black stylish use-ajax">View dataset</a></td> #}
+            {# <td><a href="#" class="btn btn-lg btn-default highlight_black stylish ">History</a></td> #}
+            {# <td><a href={{ push_to_cax }} class="btn btn-lg btn-default highlight_black stylish use-ajax">Push to StreamNet</a></td> #}
+        </tr>
+    </tbody>
+</table>
+
+<div class="last-updated-table">
+    <h1>Last Updated</h1><br>
+    <table>
+        <thead>
+            <tr>
+                <th>Username</th>
+                <th>Date Updated</th>
+                <th>Populations</th>
+                <th>Download Link</th>
+            </tr>
+            {% for item in data %}
+            <tr>
+                <td>{{ item.Username }}</td>
+                <td>{{ item.DateUpdated }}</td>
+                <td>{{ item.Populations | raw }}</td>
+                <td><a href='/sites/default/files/CAXFiles/{{ item.FileName }}' download>Uploaded File</a></td>
+            </tr>
+            {% endfor %}
+        </thead>
+    </table>
+</div>

@@ -1,0 +1,24 @@
+
+
+<ul class="sidebarTabs">
+{% for i in 1..3 %}
+    <li class="sidebarTab sidebarTab{{ i }}">
+    </li>
+{% endfor %}
+</ul>
+<div class="sidebarContent">
+    <div class="sidebarActionsWrapper">
+    {% for item in content['#items'] %}
+        {% if item.title != 'Home' %}             
+                <a href={{ item.url|render }} class="sidebarAction">   
+                    {# <img src="/prod/{{ directory }}/images/nav{{ item.title }}.png" class="sidebarActionIcon"/> #}
+                    <span style="background-image:url('/{{ directory }}/images/nav{{ item.title }}.png');
+                          background-repeat: no-repeat;
+                          background-size: 83% 133%;
+                          background-position-x: 121%;                         
+                    ">{{item.title }}
+                </a>
+        {% endif %}
+    {% endfor %}
+    </div>
+ </div>

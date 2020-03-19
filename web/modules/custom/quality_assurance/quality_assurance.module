@@ -1,0 +1,44 @@
+<?php
+
+/** 
+* Implements hook_form_alter(). 
+*/ 
+
+function quality_assurance_form_alter (&$form, \Drupal\Core\Form\FormStateInterface $form_state, $form_id) {
+    if($form_id === 'qc_log_form') {
+        $form['#attached']['library'][] = 'quality_assurance/datatables_library';
+
+        $form['#attached']['drupalSettings']
+        ['quality_assurance']['datatables_library']['test_variable'] = \Drupal::config('quality_assurance.settings')->get('facilityid');
+    }
+}
+
+/**
+ * Implements hook_theme().
+ */
+
+/* $existing, $type, $theme, $path
+*/
+
+ function quality_assurance_theme() {
+  return array(
+        'custom_form' => array(
+            'variables' => array(
+                 'my_form' => NULL,
+                 'advQuery' => NULL 
+            ),
+            'render element' => 'form'
+        ),
+    );
+}
+
+
+
+// function quality_assurance_theme() {
+//     return [
+//         'my_template' => [
+//           'variables' => ['test_var' => NULL, 
+//                           'other_var' => NULL],
+//         ],
+//       ];
+// }

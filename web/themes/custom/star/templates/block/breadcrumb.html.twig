@@ -1,0 +1,31 @@
+{#
+/**
+ * @file
+ * Theme override for a breadcrumb trail.
+ *
+ * Available variables:
+ * - breadcrumb: Breadcrumb trail items.
+ */
+#}
+{% if breadcrumb %}
+  <nav class="breadcrumb" role="navigation" aria-labelledby="system-breadcrumb">
+  <div id="system-breadcrumb-star">
+    {# <h2 id="system-breadcrumb" class="visually-hidden">{{ 'Breadcrumb'|t }}</h2> #}
+    <ul>
+    {% for item in breadcrumb %}
+      <li>
+        {% if item.url %}
+          <a href="{{ item.url }}">{{ item.text }}</a> 
+          <span class="breadcrumb-divider">&nbsp;>&nbsp;</span>         
+        {% else %}
+          {{ item.text }}     
+        {% endif %} 
+      </li>
+    {% endfor %}
+      <li><img class="yakima-logo" src="/{{ directory }}/images/yakama_logo_color100x62.png"></li>
+    </ul>
+    
+    </div>
+    
+  </nav>
+{% endif %}

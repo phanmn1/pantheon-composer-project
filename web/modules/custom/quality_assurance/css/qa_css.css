@@ -1,0 +1,56 @@
+.qa-btn-link {
+	position: relative;
+	bottom: 3px; 
+	right: 1px;
+}
+
+.btn-padding {
+	margin: 3px;
+}
+
+.ajax-progress-throbber {
+  display: none;
+}
+
+.left {
+	float: left;
+
+}
+
+.right {
+	float: left;
+	margin-left: 14px !important;
+}
+
+/*
+.form-text {
+	width: 100px;
+} */
+
+.table-wrapper {
+	clear: both;
+	visibility: hidden; /
+}
+
+/*
+
+fieldset {
+	clear: both; 
+} */
+
+/*
+.js-form-item {
+	float: left;
+	margin: 0px 15px 0px 15px !important;
+} */
+
+
+
+/*
+.button-format {
+	position: relative;
+	top: 15px;
+}*/
+
+
+

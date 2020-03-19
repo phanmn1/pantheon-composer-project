@@ -1,0 +1,412 @@
+@import "variables-and-mixins";
+@import "compass/CSS3";
+
+@media (min-width: 767px) {
+
+  body{
+    font-size: 14px;
+  }
+
+  .page-container{
+    margin: 0;
+  }
+
+  .leftSpace {
+    left: 0;
+  }
+
+  .mobile-menu-close{
+    display: none;
+  }
+
+  .flexslider {
+    .slider-caption{ display: block; }
+  }
+
+  .top-menu{
+    padding: 0;
+    text-align: left;
+  }
+  
+  .testimonials-wrap{
+    padding: 75px 0 55px;
+  }
+
+  .clients,
+  .our-team,
+  .topwidget,
+  .price-table,
+  .footerwidget,
+  .featured-video,
+  .news-and-events,
+  .region-testimonials,
+  .region-homepagemessage,
+  .path-frontpage .content_layout,
+  .bottom-widgets {
+    padding: 60px 0;
+  }
+
+  .footerwidget img.left{
+    float: left;
+    margin: 10px 10px 0 0;
+  }
+
+  .region-primary-menu{
+    text-align: left;
+    display: inline-block !important;
+    float: right;
+    width: auto;
+    margin: 0;
+    position: static;
+    background: none;
+    width: auto !important;
+    padding: 0 !important;
+    overflow: visible !important;
+
+    li{
+      border: 0;
+
+      a{
+        background: none;
+        border: 0;
+        color: #333;
+        font-size: .88em;
+
+        span.sub-arrow {
+          top: 17px;
+          bottom: 2px;
+          left: auto;
+          right: 5px;
+          padding: 0;
+          margin-top: 0;         
+          margin-left: -5px;
+          width: 0;
+          height: 0;
+          border-width: 4px;
+          border-style: solid;
+          border-color: #848484 transparent transparent transparent;
+          font-size: 2em;
+          line-height: 100%;
+        }
+
+      }
+
+      &.active a{
+        background: none;
+        color: $menuTextActiveColor;
+      }
+
+      li a{ font-size: .8em;}
+
+    }
+
+    ul{
+      border: 0;
+
+      ul{
+        background: $menuDropDownBg;
+        @include box-shadow(0px 1px 4px 0px rgba(0, 0, 0, 0.12));
+
+        a{
+          span.sub-arrow {
+            top: 15px;
+            border-color: transparent transparent transparent #848484;
+          }
+        }
+
+        li a,
+        li a:hover,
+        li a:focus,
+        li a:active,
+        li a.highlighted{
+          color: $menuDropDownColor;
+          padding: 13px 10px;
+          border-bottom: 1px solid #eee !important;
+        }
+
+        li a:hover,
+        li a:focus,
+        li a:active{
+          background: #f9f9f9;
+        }
+
+      }
+
+    }
+
+  }
+
+  .menu-base-theme span.scroll-down-arrow {
+    border-color: #333 transparent transparent transparent;
+  }
+
+  .carousel-caption p,
+  .carousel-caption h3{
+    display: block;
+  }
+
+  .carousel-caption p:last-child{
+    margin: 0;
+  }
+
+  .carousel-caption{
+    background-color: #fff;
+    background: rgba(0, 0, 0, 0.84);
+    color: #ddd;
+    text-shadow: none;
+    padding: 20px;
+    top: 20%;
+    left: 10%;
+    bottom: auto;
+    width: 30%;
+    text-align: left;
+  }
+
+  .social-media{
+    float: right;
+
+    a{ font-size: 0.75em; }
+  }
+
+  /*comment*/
+
+  .comment-wrap{
+
+    .author-details{ width: 15%; padding-right: 10px; }
+
+    .author-comments{ width: 85%; }
+
+  }
+
+  .region-top-menu{
+    float: right;
+
+    ul{ text-align: right; }
+  
+  }
+
+  .region-contact-email{
+
+    p{ margin: 13px 0; }
+
+  }
+
+  .page-node-type-news,
+  .page-node-type-events{
+
+    .node__content{
+
+      .field--name-field-image{
+        float: left;
+          margin-right: 20px;
+      }
+
+    }
+
+  }
+
+  .path-events{
+
+    .events-view{
+
+      .views-row{ width: 50%; }
+
+    }
+
+  }
+
+  .page-node-type-our-team{
+    
+    .node__content{
+
+      .field--name-field-photo{
+        float: left;
+        margin-right: 20px;
+      }
+
+    }
+
+  }
+
+  .news-view {
+
+    .views-row{
+      float: left;
+      width: 50%;
+      padding-right: 0px;
+
+      .news-wrap .news-image, 
+      .news-wrap .news-content{
+        width: 100%;
+      }
+
+      .news-wrap .news-content{
+        padding: 15px 15px;
+      }
+
+    }
+
+    .contextual + .views-row,
+    .views-row:first-child{
+      width: 100%;
+
+      .news-wrap{
+
+        .news-image{ width: 50%; }
+
+        .news-content{ width: 50%; }
+
+      }
+
+    }
+
+  }
+
+  .path-news{
+
+    .news-view {
+
+      .views-row{ width: 33%; }
+
+      .contextual + .views-row,
+      .views-row:first-child{
+
+        .news-wrap {
+
+          .news-image{ width: 100%; }
+          .news-content{ width: 100%; }
+        }
+
+      }
+
+    }
+
+  }
+
+  .pricing_item.featured{
+    top: 0;
+    padding: 50px 20px;
+    position: relative;    
+    @include border-radius(5px);
+  }
+
+  .contact-message-feedback-form {
+
+    .form-item-name,
+    .form-item-mail,
+    .field--name-subject{
+      float: left;
+      width: 33.2%;
+    }
+
+    .form-item-name,
+    .form-item-mail{
+      padding-right: 2%;
+    }
+
+    .field--name-message{ float: left; width: 100%; }
+    
+    .form-actions{ clear: both; }
+
+    #edit-preview{ display: none; }
+
+  }
+
+  .not-front{
+
+    .field--name-field-clients{
+
+      .field__item{ width: 25%; }
+
+    }
+
+  }
+
+  .view-our-team{
+    text-align: left;
+
+    .views-field-photo{
+      height: 220px;
+    }
+  }
+
+  .views-field-field-work-location,
+  .views-field-field-qualification,
+  .views-field-field-skills,
+  .views-field-view-node{
+    display: table-cell;
+  }
+
+  .field--name-field-banner-description{ font-size: 1.5em; }
+
+  .field--name-field-locations{
+    overflow: hidden;
+  
+    > .field__item{
+      float: left;
+      width: 33%;
+    }
+  }
+
+  .view-location-home{
+
+    .views-field-field-locations{
+
+      ul{
+        overflow: hidden;
+
+        li{
+          float: left;
+          width: 33.3%;
+        }
+
+      }
+
+    }
+
+  }
+
+}
+
+@media (min-width: 992px) {
+
+  .pricing_item.featured{
+    top: -25px;
+  }
+
+  .news-wrap .news-content{
+    min-height: auto;
+  }
+
+  .path-news{
+
+    .news-view{
+      overflow: hidden;
+
+      .views-row{
+
+        .news-wrap{
+
+          .news-content{ min-height: auto; }
+
+        }
+      }
+    }
+  }
+
+  .flexslider {
+    .slider-caption{
+      width: 50%;  
+    }
+    h2.slider-title{
+      font-size: 2em;
+    }
+  }
+
+}
+
+@media (min-width: 1200px) { 
+  .container {
+    width: 1290px; 
+  }
+}

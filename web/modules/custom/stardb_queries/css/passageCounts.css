@@ -1,0 +1,282 @@
+table#results-db,
+table#results-db-details {
+	font-family: "Century Gothic";
+	border: 2px;
+    border-style: solid; 
+	border-color: black; 
+	margin: 0px; 
+	font-size: .8em; 
+	max-width: 1000px !important; 
+
+	    
+}
+
+table#results-db td, 
+table#results-db-details td {
+	text-align: center; 
+	vertical-align: bottom; 
+}
+
+table#results-db th, 
+table#results-db-details th {
+	text-align: center; 
+	vertical-align: bottom; 
+	border-bottom: 2px; 
+	border-bottom-style: solid; 
+	border-bottom-color: black; 
+	word-wrap: break-word;
+
+	
+}
+
+table#results-db tfoot, 
+table#results-db-details tfoot {
+	border-top: solid; 
+}
+
+
+table#results-db-details {
+	/* table-layout: fixed; */
+}
+
+table#results-db-details td {
+	
+}
+
+tr td, tr th {
+	padding: 4px 9px;
+	border: 1px solid #fff; 
+
+}
+
+.right-border {
+	border-right-style: solid; 
+	border-right-color: black; 
+	margin: auto; 
+	border-top-style: solid; 
+	border-top-color: black; 
+	/* width: 50%; */
+	
+}
+
+.title-right-border {
+	border-right-style: solid; 
+	border-right-color: black; 
+	font-weight: bold; 
+	border-top-style: solid; 
+	border-top-color: black; 
+}
+
+.title {
+	font-weight: bold; 
+}
+
+.form-type-select, 
+.form-type-date 
+{
+	
+	float: left;
+	padding: 5px; 
+	position : relative; 
+	 
+}
+
+.form-type-textfield {
+	float: left;
+	padding: 5px; 
+	position : relative;
+	
+}
+
+.ui-datepicker-trigger {
+	position: relative;
+    bottom: 6px;
+	
+}
+
+#to-date, 
+#from-date {
+	width: 8em; 
+	margin-right: 3px;
+}
+
+#edit-submit, 
+#edit-clear,
+#edit-graph
+{
+	float: left; 
+	position: relative; 
+	top: 19px; 
+	margin: 0px 10px 0px 10px;
+	
+	
+}
+
+#facility_list, 
+#year-list, 
+#edit-submit, 
+#list-sort, 
+#species_list_details ,
+#species_list, 
+#show-details, 
+#edit-facility, 
+#edit-ladder, 
+#edit-clear, 
+#export-button
+{
+	font-family: century gothic;
+}
+
+#from-date, 
+#to-date {	
+	font-family: century gothic;
+	height: 2.26em;
+    position: relative;
+    top: -2px;
+	
+}
+
+/* #edit-export-trap {
+	font-family: century gothic; 
+	position: relative; 	
+	top: 19px; 
+	visibility: hidden;
+	margin: 0 10px; 
+} */
+
+ 
+#edit-export, 
+#edit-export-trap {
+	font-family: century gothic; 
+	position: relative; 
+	top: 19px; 
+	visibility: hidden; 
+	margin: 0 10px;
+}
+
+#edit-columns--wrapper {
+	top: 3px; 
+	clear: both; 
+}
+
+#edit-show--wrapper {
+	float:left; 
+}
+
+#table-wrapper {
+	/*overflow-x: auto; */
+	margin-top: 35px; 
+	clear: both; 
+	max-width: 1290px; 
+	
+}
+
+/*
+#table-wrapper p {
+	color: red; 
+}
+
+*/
+#ajax-ladder-hide {
+	display: none; 
+	 
+}
+
+	 
+#hide-stuff {
+	visibility: hidden;
+}
+
+#set-this-red {
+	color: red; 
+}
+
+
+.form-no-label {
+	padding: 0px; 
+}
+
+#ajax-ladder-show {
+	font-family: century gothic; 
+}
+
+
+.form-type-radio {
+	/* must delclare important because 
+	radio button is overwritten by .form-item class below  */
+	width: 45% !important;  
+}
+.ajax-progress  {
+  position: relative; 
+  top: 19px; 
+   
+}
+
+.form-radios .form-item,
+.form-checkboxes .form-item {
+  /*font-size: 64%; */
+  width: 19%;         
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  display: inline-block;
+  margin: 0px;
+}
+
+.scrollup {
+    width: 40px;
+    height: 40px;
+    position: fixed;
+    bottom: 50px;
+    right: 100px;
+    display: none;
+    text-indent: -9999px;
+   /* background: url('http://www.abidibo.net/media/blog/main_img/scroll-to-top.jpeg') no-repeat;
+    background-color: #000; */
+	background: url('../assets/scroll-to-top.jpg') no-repeat; 
+}
+
+.col-md-12 {
+	min-width: 992px !important;
+	width: 126% !important; 
+	
+}
+
+.js-form-type-select, .form-type-date  {
+	float: left;
+    padding: 5px;
+    position: relative;
+}
+
+table.sticky-header {
+	font-size: 0.8em; 
+}
+
+.form-item {
+	margin: 0em !important; 
+}
+
+.checkboxes {
+	padding-top: 33px; 
+}
+
+.bold-footnotes {
+	font-weight: bold; 
+}
+/*
+.scroll-wrapper {
+	overflow-x: scroll;
+}
+*/
+
+
+
+
+
+
+
+
+
+
+
+

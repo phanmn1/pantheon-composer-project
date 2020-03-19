@@ -1,0 +1,48 @@
+#jv-abundance-table {
+    font-size: 11px;
+}
+
+table th {
+    padding: 0px 14px; 
+}
+
+.default-selects > div > div {
+	float: left; 
+	margin: 14px !important;
+}
+
+.btn-margin-wrapper {
+	margin: 14px 10px 14px 0px;
+}
+
+table td, 
+table th {
+    text-align: center;
+}
+
+#notes-table_info,
+#notes-table_paginate {
+    visibility: hidden;
+}
+
+#notes-table {
+    border-bottom: 0px;
+}
+
+#notes-table thead {
+    display: none;
+}
+
+#notes-table tbody td {
+    background: white;
+    text-align: left;
+}
+
+.numbered-item {
+    width: 5px; 
+}
+
+.notes-title {
+    margin-top: 10px; 
+    margin-bottom: 10px;
+}

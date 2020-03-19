@@ -1,0 +1,41 @@
+
+/* VARIABLES */
+
+// $fontFamily: 'Lato', sans-serif;
+$fontFamily: 'Century Gothic';
+$baseFontSize: 13px;
+$bodyBGColor: #fff;
+$baseFontColor: #333;
+
+$linkColor: #0072bc;
+$linkColorHover: #0164a5;
+$primaryBGColor: #0072bc;
+
+/* MENU COLOR */
+
+$menuTextColor: #333;
+$menuTextActiveColor: $linkColor;
+$menuDropDownBg: #fff;
+$menuDropDownColor: #333;
+
+$sectionGreyBG: #f9f9f9;
+$sectionGreyTextColor: #000;
+
+
+/* MIXINS */
+
+@mixin globalButton(){
+	border: 0;
+	padding: 10px 15px;
+	line-height: 100%;
+	@include border-radius(0);
+}
+
+@mixin globalButtonHover(){
+	color: #fff;
+}
+
+@mixin imageStyle(){
+	border: 10px solid #fff;
+	@include box-shadow(0px 0px 2px #ddd);
+}

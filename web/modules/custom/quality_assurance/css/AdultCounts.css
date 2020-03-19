@@ -1,0 +1,71 @@
+
+/* Get all div elements in the fieldset class name default-selects and force them to be 
+   float on left side so they are next to eachother 
+
+ */ 
+.default-selects > div > div {
+	float: left; 
+	margin: 14px !important;
+}
+
+#qa-demo-from, 
+#qa-demo-to {
+	width: 100px;
+}
+
+.btn-margin-wrapper {
+	margin: 14px 10px 14px 0px;
+}
+
+#table-wrapper {
+	visibility: visible; 
+}
+
+.table-wrapper {
+	visibility: visible;
+	/*overflow-x: scroll; */
+}
+
+.qa-btn-link {
+	margin: 8px;
+	position: relative;
+	bottom: 5px; 
+}
+
+.ui-datepicker-trigger {
+	position: relative; 
+	bottom: 8px;
+	left: 3px;
+}
+
+.ajax-progress-throbber {
+  display: none;
+}
+
+.table-wrapper-scroll {
+	overflow-x: scroll;
+	width: 107%;
+	margin-bottom: 23px;
+}
+
+.textbox-size {
+	width: 100px;
+}
+
+.advanced-padding {
+	/*margin: 0px 10px 0px 10px;*/
+	margin-bottom: 16px !important; 
+
+}
+
+.blue {
+	color: blue;
+}
+
+#facility {
+	margin-left: 0px;
+}
+
+.note {
+	color: red; 
+}

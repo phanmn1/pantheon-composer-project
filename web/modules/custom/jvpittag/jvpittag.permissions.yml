@@ -1,0 +1,14 @@
+access star queries:
+  title: 'Adult Passage/Detail Permissions'
+  description: 'User Permissions to access query.'
+  restrict access: TRUE
+
+access trap samples:
+  title: 'Trap Samples Permissions'
+  description: 'User permissions to Trap Samples by Facility'
+  restrict access: TRUE
+
+rest api: 
+  title: 'Get Username Route'
+  description: 'User permissions to get username'
+  restrict access: FALSE

@@ -1,0 +1,39 @@
+streamnet_upload.escapement_page:
+  path: '/dashboard/QA/Trends'
+  defaults:
+    _controller: '\Drupal\streamnet_upload\Controller\EscapementController::getContent'
+    _title: 'Escapement Form'
+  requirements: 
+    _permission: 'escapement access'
+
+streamnet_upload.modal_upload_esc:
+  path: '/dashboard/QA/Trends/modalUpload'
+  defaults: 
+    _controller: 'Drupal\streamnet_upload\Controller\EscapementController::modalTrigger'
+    _title: 'Modal Upload'
+  requirements:
+    _permission: 'escapement access'
+
+streamnet_upload.cax_page:
+  path: '/dashboard/QA/CAX'
+  defaults:
+    _controller: 'Drupal\streamnet_upload\Controller\CAXController::getContent'
+    _title: 'NOSA'
+  requirements:
+    _permission: 'escapement access'
+
+streamnet_upload.modal_upload_cax:
+  path: '/dashboard/QA/CAX/modalUpload'
+  defaults: 
+    _controller: 'Drupal\streamnet_upload\Controller\CAXController::modalTrigger'
+    _title: 'Modal Upload'
+  requirements:
+    _permission: 'escapement access'
+
+streamnet_upload.close:
+  path: '/dashboard/QA/CAX/close'
+  defaults:
+    _controller: 'Drupal\streamnet_upload\Controller\CAXController::close'
+    _title: 'Close'
+  requirements:
+    _permission: 'escapement access'

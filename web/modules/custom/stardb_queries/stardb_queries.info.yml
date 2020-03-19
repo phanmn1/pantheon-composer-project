@@ -1,0 +1,12 @@
+name: Star Dashboard Database Module 
+description: Creates a page that lets users query the  fish table and export it out to excel 
+package: Custom
+libraries: 
+  - stardb_queries/AdultPassgeCSS
+  - core/modernizr
+
+type: module
+core: 8.x
+
+
+version: 1.0

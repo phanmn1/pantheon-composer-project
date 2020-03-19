@@ -1,0 +1,27 @@
+<?php
+
+/**
+ * Implements hook_theme().
+ */
+function jvpittag_theme() {
+    return [
+        'jvpittag_page' => [
+          'variables' => ['test_var' => NULL],
+        ],
+      ];
+    
+}
+
+/**
+ * Implements template_preprocess_node().
+ */
+function jvpittag_preprocess_node(&$variables) {
+    $node = $variables['node'];
+    $variables['#attached']['drupalSettings']['baseUrl'] =  \Drupal::config('apiurl')->get('value'); 
+    if ($variables['view_mode'] == 'full') {
+    //$variables['#attached']['library'][] = 'favorite/favorite';
+    //   $variables['content']['favorite'] = array(
+    //     '#markup' => '<div id="favorite"></div>',
+    //   );
+    }
+  }

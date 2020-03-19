@@ -1,0 +1,5 @@
+name: NS Quality Assurance 
+description: (Demo) Quality Control/Assurance module for Nelson Springs to go and edit the fish counts from drupal dashboard 
+package: Custom
+type: module 
+core: 8.x

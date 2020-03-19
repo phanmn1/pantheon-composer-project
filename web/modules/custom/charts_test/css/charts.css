@@ -1,0 +1,34 @@
+.js-form-type-select  {
+	float: left;
+    padding: 5px;
+    position: relative;
+}
+
+.btn-margin-wrapper {
+    margin-top: 19px;
+    margin-left: 13px;
+}
+
+
+.totals-table thead th,  
+.totals-table td  {
+    text-align: center;
+    width: 50%;
+}
+
+.totals-table caption {
+    text-align: center;
+    font-size: 1.5rem; 
+    margin-bottom: 10px; 
+}
+
+.highcharts-title tspan {
+    font-size: 1.7rem; 
+} 
+
+.totals-table {
+    margin-bottom: 100px; 
+}
+
+
+

@@ -1,0 +1,8 @@
+name: Juvenile Pit Tag Transfer Module
+description: Transfering JV Pit Tag Module
+package: Custom
+
+type: module
+core: 8.x
+
+version: 1.0

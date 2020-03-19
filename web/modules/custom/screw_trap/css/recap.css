@@ -1,0 +1,25 @@
+#example th, 
+#example td {
+    text-align: center;
+}
+
+#example th {
+    border: 1px solid white;
+}
+
+.fieldset-wrapper {
+    display: flex;
+    align-items: flex-end;
+}
+
+.fieldset-wrapper div {
+    margin-right: 1rem; 
+}
+
+.btn-margin-wrapper {
+	margin: 14px 10px;
+}
+
+.ui-datepicker-trigger {
+    vertical-align: top;
+}

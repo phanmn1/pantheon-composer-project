@@ -1,0 +1,116 @@
+adult_counts:
+  version: VERSION
+  css:
+    theme:
+      css/AdultCounts.css: {}
+  js: 
+    js/AdultPassage.js: {}
+
+lamprey:
+  version: VERSION
+  css:
+    theme:
+      css/Lamprey.css: {}
+  js: 
+    js/LampreyDataInput.js: {}
+
+lampreyQA:
+  version: VERSION
+  css:
+    theme:
+      css/Lamprey.css: {}
+  js: 
+    js/LampreyDataInputQA.js: {}
+
+agedData: 
+  version: VERSION
+  css:
+    theme:
+      css/AdultCounts.css: {}
+      css/AgedData.css: {}
+  js: 
+    js/AgedData.js: {}
+
+
+  
+
+calendar_library: 
+  version: VERSION
+  css: 
+    theme: 
+      https://code.jquery.com/ui/1.12.0/themes/base/jquery-ui.css: { type: external, minified: false }
+  js: 
+    js/script.js: {}
+  dependencies:
+    -  core/jqueryui 
+
+datatables_library: 
+  version: VERSION
+  css: 
+    theme:
+      https://cdn.datatables.net/v/dt/dt-1.10.16/datatables.min.css : {type: external, minified: true}
+      https://cdn.datatables.net/1.10.19/css/jquery.dataTables.min.css : {type: external, minified: true}
+      https://cdn.datatables.net/buttons/1.4.2/css/buttons.dataTables.min.css : {type: external, minified: true}
+      https://cdn.datatables.net/select/1.2.3/css/select.dataTables.min.css : {type: external, minified: true}
+      https://editor.datatables.net/extensions/Editor/css/editor.dataTables.min.css: {type: external, minified: true}
+      https://cdn.datatables.net/responsive/2.2.3/css/responsive.dataTables.min.css: {type: external, minified: true}
+      https://cdn.datatables.net/keytable/2.4.0/css/keyTable.dataTables.min.css: {type: external, minified: true}
+      https://cdn.datatables.net/fixedheader/3.1.5/css/fixedHeader.dataTables.min.css : {type: external, minified: true}
+      
+      css/DataTables.css: {} 
+      #css/LogReports.css: {}
+  js: 
+    #https://code.jquery.com/jquery-1.12.4.js : {type: external}
+    #js/table.js: {weight: -4}
+    #js/datatables.min.js: {minified: true, weight: -2}
+    
+    https://cdn.datatables.net/1.10.19/js/jquery.dataTables.min.js : {type: external, minified: true, weight: -8}
+    https://cdn.datatables.net/buttons/1.4.2/js/dataTables.buttons.min.js : {type: external, minified: true, weight: -6}
+    https://cdn.datatables.net/select/1.2.3/js/dataTables.select.min.js : {type: external, minified: true, weight: -5}
+    #https://cdn.datatables.net/buttons/1.2.1/js/buttons.print.min.js : {type: external, minified: true, weight: -4}   
+    https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.18.1/moment.min.js : {type: external, minified: true, weight: -4}
+    https://cdn.datatables.net/responsive/2.2.3/js/dataTables.responsive.min.js: {type: external, minified: true, weight: -3}
+    https://cdn.datatables.net/keytable/2.4.0/js/dataTables.keyTable.min.js: {type: external, minified: true, weight: -2}
+    js/dataTables.fixedHeader.js: {weight: -7 }
+    
+    #//cdn.datatables.net/plug-ins/1.10.16/filtering/row-based/range_dates.js
+    #https://code.jquery.com/jquery-3.3.1.js: {type: external }
+    js/dataTables.editor.min.js: {minified: true, weight: -1}
+  dependencies: 
+    -  core/drupal
+    -  core/jquery
+    -  core/drupalSettings
+
+qc_log_table: 
+  version: VERSION
+  css: 
+    theme:
+      css/AdultCounts.css: {}
+      css/LogReports.css: {}
+  js: 
+    # js/script.js: {}
+    js/LogReports.js: {}
+
+qc_form: 
+  version: VERSION
+  css:
+    theme:
+      css/AdultCounts.css: {}
+  js:    
+    js/TrapSamples.js: {}
+
+trap_samples_modal: 
+  version: VERSION
+  css: 
+    theme: 
+      css/TrapSamplesModal.css: {}
+  js: 
+    js/wickedpicker.js: {}
+
+log_reports_css: 
+  version: VERSION 
+  css: 
+    theme: 
+      css/LogReports.css: {}
+
+

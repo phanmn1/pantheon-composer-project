@@ -1,0 +1,24 @@
+#imported-data {
+    width: 1280px;
+    height: 1000px;
+    overflow: scroll; /* Scrollbar are always visible */
+    
+}
+
+.comments {
+    width: 400px; 
+}
+
+b {
+    font-weight: 700 !important; 
+}
+
+.container-messages {
+    margin-left: auto; 
+    margin-right: auto; 
+}
+
+.close-button {
+    float: right; 
+}
+

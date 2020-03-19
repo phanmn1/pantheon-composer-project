@@ -1,0 +1,17 @@
+{{ attach_library('core/drupal.dialog.ajax') }}
+{% set close = path('streamnet_upload.close') %}
+
+{# <div class="container-messages">
+    <b>Dataset: </b>Yakima spring Chinook Natural Origin Returns (NOR)<br>
+    <b>Data sent successfully to CAX. </b><br>
+    <a href=# class="close-button btn btn-sm btn-default highlight_black stylish use-ajax">Close</a>
+</div> #}
+
+{{ dump(data) }}
+
+<div class="container-messages">
+    <b>Dataset: </b>{{ data.datatype }}<br>
+    <b>Data sent successfully to {{ data.dataset }}. </b><br>
+    <a href={{ close }} class="close-button btn btn-sm btn-default highlight_black stylish use-ajax">Close</a>
+</div>
+

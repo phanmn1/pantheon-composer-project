@@ -1,0 +1,31 @@
+<?php 
+
+/** 
+ * Implements hook_theme().
+ */
+
+ function streamnet_upload_theme() {
+     return [
+        'cax_layout' => [
+             'variables' => [
+                 'title' => NULL, 
+                  'data' => NULL
+                ],
+             'render element' => 'form'
+            ],
+        'esc_layout' => [
+            'variables' => [
+                'title' => NULL, 
+                'data' => NULL
+            ],
+            'render element' => 'form'
+            ],
+        'response_message' => [
+            'variables' => [
+                'title' => NULL,    
+                'data' => NULL               
+            ],
+            'render element' => 'form'
+            ]
+        ];
+ }

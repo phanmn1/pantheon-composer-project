@@ -1,0 +1,5 @@
+name: 'Screw Trap'
+description: 'Screw Trap Module'
+package: Custom
+type: module
+core: 8.x

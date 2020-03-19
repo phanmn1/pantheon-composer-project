@@ -1,0 +1,19 @@
+td.details-control {
+    background: url('../resources/details_open.png') no-repeat center center;
+    cursor: pointer;
+}
+tr.details td.details-control {
+    background: url('../resources/details_close.png') no-repeat center center;
+}
+
+.dataTables_scrollBody thead {
+    visibility: hidden; 
+}
+
+.main-header {
+    z-index: 10 !important;
+}
+
+table.dataTable tbody td {
+    vertical-align: top;
+  }

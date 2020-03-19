@@ -1,0 +1,12 @@
+/* th,td {
+    text-align: center !important; 
+} */
+
+.last-updated-table {
+    margin-left: 100px; 
+}
+
+
+thead th {
+    background: #878787 !important;
+}
