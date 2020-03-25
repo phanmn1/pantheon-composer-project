@@ -28,6 +28,12 @@ include __DIR__ . "/settings.pantheon.php";
 /**
  * If there is a local settings file, then include it
  */
+//$config['config_split.config_split.development_config']['status'] = FALSE;
+$config['sn_api']['value'] = 'https://api.streamnet.org';
+//$config['apiurl']['value'] = 'http://localhost:58529';
+$config['arcgisid']['value'] = 'e0533248a55d410998e2c7ded3361497';
+$config['apiurl']['value'] = 'https://dashboard.yakamafish-star.net/rest';
+
 $local_settings = __DIR__ . "/settings.local.php";
 if (file_exists($local_settings)) {
   include $local_settings;
